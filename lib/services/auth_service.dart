@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_mvc/services/dio_service.dart';
+import 'package:taam/services/dio_service.dart';
 
 class AuthService {
   static getData(int queue) async {

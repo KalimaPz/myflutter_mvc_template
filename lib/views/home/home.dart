@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_mvc/services/auth_service.dart';
-import 'package:flutter_mvc/services/dio_service.dart';
-import 'package:provider/provider.dart';
+import 'package:taam/services/supabase.service.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -15,9 +13,7 @@ class Home extends StatelessWidget {
       body: Center(
           child: ElevatedButton(
               onPressed: () {
-
-                print(DioService.dio.options.baseUrl);
-                AuthService.getData(1);
+                SupabaseService.getTodo();
               },
               child: Text('TEST'))),
     );
